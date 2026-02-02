@@ -1,0 +1,16 @@
+import Constants from 'expo-constants';
+
+const ENV = {
+  SUPABASE_URL: Constants.expoConfig?.extra?.EXPO_PUBLIC_SUPABASE_URL || process.env.EXPO_PUBLIC_SUPABASE_URL || '',
+  SUPABASE_ANON_KEY: Constants.expoConfig?.extra?.EXPO_PUBLIC_SUPABASE_ANON_KEY || process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || '',
+  CLOUDINARY_CLOUD_NAME: Constants.expoConfig?.extra?.EXPO_PUBLIC_CLOUDINARY_CLOUD_NAME || process.env.EXPO_PUBLIC_CLOUDINARY_CLOUD_NAME || '',
+  CLOUDINARY_UPLOAD_PRESET: Constants.expoConfig?.extra?.EXPO_PUBLIC_CLOUDINARY_UPLOAD_PRESET || process.env.EXPO_PUBLIC_CLOUDINARY_UPLOAD_PRESET || '',
+  GEMINI_API_KEY: Constants.expoConfig?.extra?.EXPO_PUBLIC_GEMINI_API_KEY || process.env.EXPO_PUBLIC_GEMINI_API_KEY || '',
+  REVENUECAT_API_KEY_IOS: Constants.expoConfig?.extra?.EXPO_PUBLIC_REVENUECAT_API_KEY_IOS || process.env.EXPO_PUBLIC_REVENUECAT_API_KEY_IOS || '',
+  REVENUECAT_API_KEY_ANDROID: Constants.expoConfig?.extra?.EXPO_PUBLIC_REVENUECAT_API_KEY_ANDROID || process.env.EXPO_PUBLIC_REVENUECAT_API_KEY_ANDROID || '',
+  GOOGLE_CLIENT_ID_IOS: Constants.expoConfig?.extra?.EXPO_PUBLIC_GOOGLE_CLIENT_ID_IOS || process.env.EXPO_PUBLIC_GOOGLE_CLIENT_ID_IOS || '',
+  GOOGLE_CLIENT_ID_ANDROID: Constants.expoConfig?.extra?.EXPO_PUBLIC_GOOGLE_CLIENT_ID_ANDROID || process.env.EXPO_PUBLIC_GOOGLE_CLIENT_ID_ANDROID || '',
+  GOOGLE_CLIENT_ID_WEB: Constants.expoConfig?.extra?.EXPO_PUBLIC_GOOGLE_CLIENT_ID_WEB || process.env.EXPO_PUBLIC_GOOGLE_CLIENT_ID_WEB || '',
+};
+
+export default ENV;
